@@ -72,7 +72,7 @@ def genRandomPass(passLen):
 	alphaUpper = string.ascii_uppercase
 	digits = string.digits
 	symbols = "!@#$%^&*?_-"
-	avg = passLen//4
+	avg = passLen//4 + 4
 	
 	randomAlphaLower = random.choices(alphaLower,k=avg)
 	randomAlphaUpper = random.choices(alphaUpper,k=avg)
@@ -82,6 +82,7 @@ def genRandomPass(passLen):
 	randomComb = randomAlphaLower + randomAlphaUpper + randomDigits + randomSymbols
 
 	random.shuffle(randomComb)
+	randomComb = randomComb[:passLen]
 	return ''.join(randomComb)
 
 main()

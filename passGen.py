@@ -29,7 +29,7 @@ def main():
 	#Printing The Banner
 	
 	print(red,"*"*33,"\n","*"," "*31,"*",sep='')
-	print("*",lightblue,bold,"\tPassword Generator\t",reset,red,"*",sep='')
+	print("|",lightblue,bold,"\tPassword Generator\t",reset,red,"|",sep='')
 	print("*"," "*31,"*","\n","*"*33,sep='')
 
 	#Main Program
